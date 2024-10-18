@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Two</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            text-align: center;
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        .greeting {
+            animation: slideIn 1s;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #008CBA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #007B9A;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="greeting">Hello there, nice to see you!</h1>
+        <a href="{% url 'home' %}" class="button">Go to Home</a>
+        <a href="{% url 'page_three' %}" class="button">Go to Page Three</a>
+    </div>
+</body>
+</html>
