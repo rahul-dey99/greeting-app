@@ -11,6 +11,8 @@ By following this docker guide you can build and run your own greeting website.
 
 The Dockerfile is file that contains all the instructions to containerize the application.
 
+![Dockerfile image](greetings/images/Dockerfile-img.png)
+
 ### The Dockerfile keywords
 
 1. FROM python:3.10-slim - The ```FROM``` keyword is used to specify the base image for our app. It is a django app, obviously, it needs python.
